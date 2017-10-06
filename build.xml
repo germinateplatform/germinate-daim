@@ -77,13 +77,13 @@
 			<zipfileset dir="${img.dir}" includes="**/*.*" prefix="img"/>
 			<zipfileset dir="${res.dir}" includes="**/*.*"/>
 			<!-- Include the licence -->
-			<zipfileset dir="${basedir}" includes="LICENCE.txt"/>
+			<zipfileset dir="${basedir}" includes="LICENSE"/>
 
-			<zipfileset dir="./licence" includes="**/*.txt" prefix="licence"/>
+			<zipfileset dir="licences" includes="**/*.txt" prefix="licences"/>
 		</jar>
 
 		<!-- Copy the copyright information -->
-		<copy file="LICENCE.txt" overwrite="true" todir="${jar.dir}"/>
+		<copy file="LICENSE" overwrite="true" todir="${jar.dir}"/>
 	</target>
 
 	<target name="clean-build" depends="clean,jar"/>

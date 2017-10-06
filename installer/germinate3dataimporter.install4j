@@ -26,7 +26,7 @@
       <mountPoint id="258" root="" location="" mode="755" />
     </mountPoints>
     <entries>
-      <fileEntry mountPoint="258" file="../LICENCE.txt" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="258" file="../LICENSE" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <dirEntry mountPoint="258" file="../lib_swt" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="lib" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
       </dirEntry>
@@ -35,7 +35,7 @@
       </dirEntry>
       <dirEntry mountPoint="258" file="../bin_jar/jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="lib" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude>
-          <entry location="LICENCE.txt" fileType="regular" />
+          <entry location="LICENSE" fileType="regular" />
         </exclude>
       </dirEntry>
     </entries>
@@ -190,7 +190,7 @@
                       <void method="put">
                         <string>en</string>
                         <object class="com.install4j.api.beans.ExternalFile">
-                          <string>../LICENCE.txt</string>
+                          <string>../LICENSE</string>
                         </object>
                       </void>
                     </void>

@@ -217,15 +217,12 @@ public class Resources
 								}
 							}
 
-							System.out.println(zoom + " -> " + path);
-
 							Image image = new Image(null, stream);
 							ImageData data = image.getImageData();
 							image.dispose();
 
 							return data;
 						});
-//						newImage = new Image(null, Humbug.class.getClassLoader().getResourceAsStream(IMAGE_PATH + "/" + name));
 					}
 					/* Else, we aren't using a jar */
 					else
@@ -247,11 +244,8 @@ public class Resources
 									path = IMAGE_PATH + "/" + name;
 							}
 
-							System.out.println(zoom + " -> " + path);
-
 							return path;
 						});
-//						newImage = new Image(null, IMAGE_PATH + "/" + name);
 					}
 
                     /* Remember that we loaded this image */

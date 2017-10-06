@@ -119,11 +119,11 @@ public class AboutDialog extends BannerDialog
 			{
 				LinkedHashMap<String, String> result = new LinkedHashMap<>();
 
-				result.put(RB.getString(RB.APPLICATION_TITLE), "LICENCE.txt");
-				result.put("Database Commons", "licence/database-commons.txt");
-				result.put("Faenza Icon Set", "licence/faenza.txt");
-				result.put("Joda-Time", "licence/joda-time.txt");
-				result.put("Simple Xml Serialization", "licence/simple-xml.txt");
+				result.put(RB.getString(RB.APPLICATION_TITLE), "LICENSE");
+				result.put("Database Commons", "licences/database-commons.txt");
+				result.put("Faenza Icon Set", "licences/faenza.txt");
+				result.put("Joda-Time", "licences/joda-time.txt");
+				result.put("Simple Xml Serialization", "licences/simple-xml.txt");
 
 				return result;
 			}
