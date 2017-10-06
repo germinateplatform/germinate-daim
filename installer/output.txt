@@ -1,0 +1,7 @@
+# List of generated media files. The columns are tab-separated:
+# id | media file type | display name | media file path
+141	windows	Windows-x64	D:\workspaces\java-intellij\germinate3-data-importer\installer\germinate-daim_win-x64_1_17_03_14.exe
+202	windows	Windows-x86	D:\workspaces\java-intellij\germinate3-data-importer\installer\germinate-daim_win-x86_1_17_03_14.exe
+142	macos	Mac OS X Single Bundle	D:\workspaces\java-intellij\germinate3-data-importer\installer\germinate-daim_macos_1_17_03_14.dmg
+205	unix	Linux-x64	D:\workspaces\java-intellij\germinate3-data-importer\installer\germinate-daim_linux-x64_1_17_03_14.sh
+208	unix	Linux-x86	D:\workspaces\java-intellij\germinate3-data-importer\installer\germinate-daim_linux-x86_1_17_03_14.sh

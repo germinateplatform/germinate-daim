@@ -1,5 +1,9 @@
+/.idea/
+
 # Compiled class file
 *.class
+/bin/
+/bin_jar/
 
 # Log file
 *.log
@@ -11,7 +15,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 *.zip
@@ -20,3 +23,14 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+/installer/*.exe
+/installer/*.dmg
+/installer/*.sh
+/installer/md5sums
+/installer/updates.xml
+/installer/output.txt
+
+/keys/
+
+/build-dev.properties

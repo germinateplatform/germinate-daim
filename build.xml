@@ -1,0 +1,110 @@
+<!--~
+  ~ Copyright 2017 Sebastian Raubach and Paul Shaw from the
+  ~ Information and Computational Sciences Group at JHI Dundee
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project name="GerminateDaim" basedir="." default="clean-build">
+
+	<property file="build-dev.properties"/>
+	<property name="src.dir" value="src"/>
+
+	<!-- Define the necessary paths -->
+	<property name="build.dir" value="bin_jar"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="lib.deploy.dir" value="lib_swt"/>
+	<property name="classes.dir" value="${build.dir}/classes"/>
+	<property name="jar.dir" value="${build.dir}/jar"/>
+	<property name="img.dir" value="img"/>
+	<property name="res.dir" value="res"/>
+
+	<!-- Define the main class -->
+	<property name="main-class" value="jhi.germinatedataimporter.gui.GerminateDataImporter"/>
+
+	<!-- Define the class path -->
+	<path id="classpath">
+		<fileset dir="${lib.dir}" includes="**/*.jar"/>
+		<fileset dir="${lib.deploy.dir}" includes="**/*.jar"/>
+	</path>
+
+	<pathconvert pathsep=" " property="base.classpath">
+		<path refid="classpath"/>
+		<mapper>
+			<chainedmapper>
+				<flattenmapper/>
+				<globmapper from="*.jar" to="*.jar"/>
+			</chainedmapper>
+		</mapper>
+	</pathconvert>
+
+	<!-- Clean previously built files -->
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+	</target>
+
+	<!-- Compile the project -->
+	<target name="compile">
+		<mkdir dir="${classes.dir}"/>
+		<javac classpathref="classpath" destdir="${classes.dir}" encoding="utf-8" includeantruntime="false" source="8" srcdir="${src.dir}"
+			   target="8"/>
+	</target>
+
+	<!-- Define classpath and create the jar folder -->
+	<target name="pre_jar" depends="compile">
+		<mkdir dir="${jar.dir}"/>
+	</target>
+
+	<!-- Create the jar files -->
+	<target name="jar" depends="pre_jar">
+		<jar basedir="${classes.dir}" destfile="${jar.dir}/${ant.project.name}.jar">
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}"/>
+				<attribute name="Class-Path" value="./ ${base.classpath}"/>
+				<attribute name="Implementation-Version" value="${i4j.version}"/>
+			</manifest>
+
+			<zipfileset dir="${img.dir}" includes="**/*.*" prefix="img"/>
+			<zipfileset dir="${res.dir}" includes="**/*.*"/>
+			<!-- Include the licence -->
+			<zipfileset dir="${basedir}" includes="LICENCE.txt"/>
+
+			<zipfileset dir="./licence" includes="**/*.txt" prefix="licence"/>
+		</jar>
+
+		<!-- Copy the copyright information -->
+		<copy file="LICENCE.txt" overwrite="true" todir="${jar.dir}"/>
+	</target>
+
+	<target name="clean-build" depends="clean,jar"/>
+
+	<!-- Ask for the version number -->
+	<target name="getversion">
+		<input addproperty="i4j.version" message="Enter the version number of G3DI:"/>
+	</target>
+
+	<!-- Build the installers -->
+	<target name="install4j" depends="getversion, clean-build">
+		<taskdef name="install4j" classname="com.install4j.Install4JTask" classpath="C:\Program Files\install4j7\bin\ant.jar"/>
+
+		<delete>
+			<fileset dir="installer" includes="**/*.exe"/>
+			<fileset dir="installer" includes="**/*.sh"/>
+			<fileset dir="installer" includes="**/*.dmg"/>
+		</delete>
+
+		<install4j macKeystorePassword="${keystore.password}" projectfile="installer/germinate3dataimporter.install4j" release="${i4j.version}"
+				   winKeystorePassword="${keystore.password}"/>
+	</target>
+
+</project>

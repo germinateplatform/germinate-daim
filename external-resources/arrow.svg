@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--~
+  ~ Copyright 2017 Sebastian Raubach and Paul Shaw from the
+  ~ Information and Computational Sciences Group at JHI Dundee
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+	height="29.999996"
+	id="svg2"
+	version="1.1"
+	width="210"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	inkscape:export-filename="C:\Users\sr41756\Desktop\arrow.png"
+	inkscape:export-xdpi="53.917923"
+	inkscape:export-ydpi="53.917923"
+	inkscape:version="0.48.4 r9939"
+	sodipodi:docname="New document 1">
+	<defs
+		id="defs4"/>
+	<sodipodi:namedview
+		bordercolor="#666666"
+		borderopacity="1.0"
+		fit-margin-bottom="0"
+		fit-margin-left="0"
+		fit-margin-right="0"
+		fit-margin-top="0"
+		id="base"
+		pagecolor="#ffffff"
+		showgrid="true"
+		inkscape:current-layer="layer1"
+		inkscape:cx="307.53693"
+		inkscape:cy="-158.02802"
+		inkscape:document-units="px"
+		inkscape:pageopacity="0.0"
+		inkscape:pageshadow="2"
+		inkscape:window-height="1058"
+		inkscape:window-maximized="1"
+		inkscape:window-width="1858"
+		inkscape:window-x="54"
+		inkscape:window-y="-8"
+		inkscape:zoom="1.5429849">
+		<inkscape:grid
+			empspacing="5"
+			enabled="true"
+			id="grid2985"
+			originx="-110px"
+			originy="-940px"
+			snapvisiblegridlinesonly="true"
+			type="xygrid"
+			visible="true"/>
+	</sodipodi:namedview>
+	<metadata
+		id="metadata7">
+		<rdf:RDF>
+			<cc:Work
+				rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type
+					rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title></dc:title>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<g
+		id="layer1"
+		transform="translate(-110,-82.362183)"
+		inkscape:groupmode="layer"
+		inkscape:label="Layer 1">
+		<path
+			style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+			d="m 120,87.375 c -5.52285,0 -10,4.477153 -10,10 0,5.52285 4.47715,10 10,10 5.52285,0 10,-4.47715 10,-10 0,-5.522847 -4.47715,-10 -10,-10 z m -0.5,5 c 0.16809,-0.01707 0.32741,0 0.5,0 2.76142,0 5,2.238576 5,5 0,2.76142 -2.23858,5 -5,5 -2.76142,0 -5,-2.23858 -5,-5 0,-2.588835 1.97872,-4.74395 4.5,-5 z"
+			id="path3757"
+			inkscape:connector-curvature="0"/>
+		<rect
+			style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+			height="10"
+			id="rect3762"
+			rx="0"
+			width="175"
+			x="125"
+			y="92.362183"/>
+		<path
+			style="fill:#000000;fill-opacity:1;stroke:none"
+			d="m 300,82.362183 0,29.999997 20,-14.999997 z"
+			id="path3764"
+			inkscape:connector-curvature="0"/>
+	</g>
+</svg>
