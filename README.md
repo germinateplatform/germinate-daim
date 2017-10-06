@@ -6,8 +6,13 @@ We have also included tools to revert the most recent change should any problems
 
 To try Germinate Daim download and run the application which can be downloaded here. You will need to have MySQL user permissions in order to use this tool. We have also created some handy movies showing the basic operation of Germinate Daim which you can find below.
 
+## Germinate Daim Help Content
+
+Please consult the [Wiki](../../wiki) for help.
 
 ## Germinate Daim Help Movies
+
+In addition to the Wiki, we have a few videos on YouTube that may be of use.
 
 Import data into Germinate 3 using Germinate Daim
 
