@@ -6,6 +6,10 @@ We have also included tools to revert the most recent change should any problems
 
 To try Germinate Daim download and run the application which can be downloaded here. You will need to have MySQL user permissions in order to use this tool. We have also created some handy movies showing the basic operation of Germinate Daim which you can find below.
 
+## Download
+
+Check the [Releases](../../releases) to get the latest installers.
+
 ## Germinate Daim Help Content
 
 Please consult the [Wiki](../../wiki) for help.
